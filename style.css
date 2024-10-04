@@ -1,0 +1,515 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rosario";
+  src: url("./Font/Rosario-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Uindbase Font 1";
+  src: url(/Font/UF1.ttf);
+}
+
+@font-face {
+  font-family: "Usually-font-Bold";
+  src: url(/Font/Usually-font-Bold.otf);
+}
+
+body {
+  background-color: rgba(10, 15, 20, 1);
+  font-family: "Uindbase Font 1", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  margin-top: 43px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu {
+  display: flex;
+  align-items: stretch;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 32px;
+  position: relative;
+  top: 5px;
+  right: 30px;
+  left: 30px;
+  bottom: 10px;
+}
+
+.menu__link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  line-height: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  position: relative;
+  height: 30px;
+  width: 124px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0 8px #d1c12b);
+}
+
+.submenu {
+  height: 15px;
+  width: 370px;
+  position: relative;
+  left: 125px;
+}
+
+.menu__list sub {
+  display: flex;
+  align-items: stretch;
+}
+
+.sub .menu__item {
+  position: relative;
+  left: 9px;
+  right: 0;
+}
+
+.header_social {
+  position: relative;
+  display: flex;
+  left: 400px;
+  top: 5px;
+  gap: 2px;
+}
+
+.header_social-icon {
+  display: flex;
+  width: 26px;
+  height: 15px;
+}
+
+/* Hero */
+
+.hero {
+  background-position: center;
+  margin-top: 135px;
+  width: 100%;
+  color: white;
+  display: flex;
+  position: relative;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 90px;
+  box-shadow: 10px 24px 10px 0px rgba(0, 0, 0, 0.37);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero::before {
+  content: "Одежда для каждого";
+  color: #1f252d;
+  text-align: center;
+  position: absolute;
+  font-family: "Usually-font-Bold", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  top: 30px;
+  z-index: -1;
+  font-size: 140px;
+  line-height: 148.07px;
+}
+
+.hero__title {
+  width: 100%;
+  font-family: "Usually-font-Bold", sans-serif;
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 113.23px;
+  text-align: center;
+  color: #ffffff;
+  /* text-shadow: 0 0 8px #d1c12b;
+   */
+  text-shadow: -10px 0 10px #d1c12b, -20px 0 20px #a332ca;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 33px;
+}
+
+.hero-logo img {
+  position: relative;
+  height: 50px;
+  width: 209px;
+  left: 512px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0 1px #d1c12b);
+}
+
+.hero__actions {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.hero__button {
+  border-radius: 50px;
+  border: 2px solid #d1c12b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+  position: relative;
+  padding: 20px 40px;
+}
+
+.hero__button img {
+  width: 23px;
+  height: 16px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 8px #d1c12b) drop-shadow(0 0 16px #d1c12b);
+}
+
+.hero__button p {
+  font-family: "Rosario", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d1c12b;
+  margin: 0;
+  text-shadow: 0 0 8px #d1c12b, 0 0 16px #d1c12b;
+}
+
+/* Carousel*/
+
+.carousel__content {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel__heading {
+  font-family: "Uindbase Font 1", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.carousel__heading::before {
+  content: "на этот сезон";
+  color: #1f252d;
+  position: absolute;
+  font-family: "Usually-font-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 160px;
+  z-index: -1;
+  text-align: center;
+}
+
+.carousel__foto {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__foto img {
+  width: 100%;
+  display: blcok;
+  margin-left: 80px;
+}
+
+.overlay {
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.3); */
+  color: white;
+  width: 300px;
+  padding: 20px;
+  top: 252px;
+  left: 750px;
+}
+
+.overlay-text {
+  font-family: "Uindbase Font 1", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.carousel__button {
+  font-family: "Rosario", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d1c12b;
+  margin: 0;
+  text-shadow: 0 0 8px #d1c12b, 0 0 16px #d1c12b;
+}
+
+/* .arrow {
+  position: absolute;
+  height: auto;
+  width: 10px; 
+  top: 1214px;
+  width: 10px;
+}
+
+.arrow .right {
+  position: absolute;
+} */
+
+.carousel_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
+
+.carousel__actual {
+  font-family: "Uindbase Font 1", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+  display: flex;
+  justify-content: right;
+  padding-top: 40px;
+  position: relative;
+}
+
+.carousel__actual::before {
+  content: "АКТУАЛЬНОЕ";
+  color: #1f252d;
+  position: absolute;
+  z-index: -1;
+  font-family: "Usually-font-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 130px;
+  top: 20px;
+}
+
+/* Products */
+
+.products {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Uindbase Font 1", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.products__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.products-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #10171f;
+  border-radius: 10px;
+  width: 272px;
+  height: 461px;
+}
+
+.products-item img {
+  border-radius: 10px;
+}
+
+.products-item-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.products__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products__price a {
+  background-color: none;
+  text-decoration: underline;
+  color: white;
+}
+
+.full {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.full a {
+  color: white;
+  text-decoration: underline;
+  /* position: relative; */
+}
+
+/* Map */
+
+.map {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.map__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.map__titile {
+  font-family: "Uindbase Font 1", sans-serif;
+  /* height: 100px; */
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  position: relative;
+}
+
+.map__titile::before {
+  content: "КОНТАКТЫ";
+  color: #1f252d;
+  font-family: "Usually-font-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 160px;
+  position: absolute;
+  z-index: -1;
+}
+
+.map__item {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 110px;
+}
+
+.map_image {
+  width: 800px;
+  height: 400px;
+}
+
+.map__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rosario", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18.18px;
+  color: white;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.footer_social {
+  padding-left: 350px;
+  gap: 5px;
+}
+
+.footer__logo {
+  padding-left: 50px;
+}
+
+.footer_social img {
+  height: 15px;
+}
+
+.footer__logo div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 12px;
+  padding: 0 0 0 5px;
+}
